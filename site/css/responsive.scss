@@ -1,0 +1,630 @@
+@import "_mixin.scss";
+
+@media screen and (max-width: 480px) {
+  #top {
+    min-width: 480px;
+
+    header {
+      justify-content: space-between;
+
+      ul {
+        display: none;
+      }
+
+      li {
+        margin-right: 0;
+
+        a {
+          display: none;
+        }
+      }
+
+      button {
+        display: block;
+        background-color: transparent;
+
+        .my-example {
+          color: #fff;
+        }
+      }
+    }
+
+    main {
+      .main-image {
+        background-image: url(../images/re-top-topimage.jpg);
+      }
+
+      .nutrition-nav {
+        flex-wrap: wrap;
+
+        li {
+          width: 50%;
+          height: 158px;
+        }
+
+        li:first-child {
+          background-image: url(../images/re-top-totalcarbohydrate.jpg);
+          margin-top: 20px;
+        }
+
+        li:nth-child(2) {
+          background-image: url(../images/re-top-fat.jpg);
+          margin-top: -20px;
+        }
+
+        li:nth-child(3) {
+          background-image: url(../images/re-top-protein.jpg);
+        }
+
+        li:last-child {
+          background-image: url(../images/re-top-vitamin.jpg);
+          margin-top: -40px;
+        }
+      }
+
+      .traning-nav {
+        li {
+          width: 100%;
+          height: 181px;
+          margin-bottom: 90px;
+          margin-top: 100px;
+          position: relative;
+
+          a {
+            position: absolute;
+            position: relative;
+            top: 170px;
+            font-size: 16px;
+
+            span {
+              position: absolute;
+              top: 180px;
+              font-size: 12px;
+              margin-top: -150px;
+              display: block;
+            }
+          }
+        }
+
+        li:first-child {
+          background-image: url(../images/re-top-chest.jpg);
+        }
+
+        li::before {
+          top: 90%;
+          left: 50%;
+        }
+
+        li::after {
+          bottom: -150px;
+          left: 47%;
+        }
+      }
+    }
+  }
+
+  footer {
+    flex-wrap: wrap;
+
+    .footer-traning-nav {
+      width: 50%;
+      margin-bottom: 50px;
+
+      h2::after {
+        display: none;
+      }
+    }
+
+    .footer-nutrition-nav {
+      width: 50%;
+
+      h2::after {
+        display: none;
+      }
+    }
+
+    .footer-merit-nav {
+      width: 50%;
+
+      h2::after {
+        display: none;
+      }
+    }
+
+    .sns-nav {
+      h2::after {
+        display: none;
+      }
+    }
+  }
+
+  #traning,
+  #merit {
+    min-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+   
+
+    header {
+      justify-content: space-between;
+      width: 100%;
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 101;
+        background-color: black;
+        ul {
+          display: flex;
+          flex-direction: column;
+          .logo-btn {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 0;
+          }
+        }
+        li {
+          a {
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 24px;
+          }
+        }
+      }
+      ul {
+        display: none;
+      }
+
+      li {
+        margin-right: 0;
+
+        a {
+          display: none;
+        }
+      }
+
+      button {
+        display: block;
+        background-color: transparent;
+
+        .my-example {
+          color: #fff;
+        }
+      }
+    }
+
+    main {
+      padding-right: 10px;
+      padding-left: 10px;
+      h1 {
+        font-size: 24px;
+      }
+      #chest {
+        h2 {
+          min-width: 480px;
+          background-image: url(../images/re-traning-chest.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      #back {
+        h2 {
+          min-width: 480px;
+          background-image: url(../images/re-traning-back.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      #sholders {
+        h2 {
+          min-width: 480px;
+          background-image: url(../images/re-traning-sholders.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      #arms {
+        h2 {
+          min-width: 480px;
+          background-image: url(../images/re-traning-arms.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      #legs {
+        h2 {
+          min-width: 480px;
+          background-image: url(../images/re-traning-legs.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      #goal {
+        h2 {
+          min-width: 480px;
+          background-image: url(../images/re-goal.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      #health {
+        h2 {
+          min-width: 480px;
+          background-image: url(../images/re-health.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .parts {
+        min-width: 480px;
+        width: auto;
+
+        h2 {
+          min-width: 480px;
+        }
+
+        .menu-container {
+          width: auto;
+          padding-right: 20px;
+          padding-left: 20px;
+
+          .number {
+            p {
+              margin-right: 0;
+            }
+
+            h3::before {
+              display: none;
+            }
+
+            h3::after {
+              display: none;
+            }
+          }
+        }
+
+        .menu-contents {
+          flex-direction: column;
+
+          figure {
+            display: none;
+          }
+
+          .respnsive-traning-menu-images {
+            display: block;
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-around;
+
+            .respnsive-traning-menu-image {
+              display: block;
+            }
+          }
+
+          .menu-text {
+            p {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+      .effect {
+        min-width: 480px;
+        width: auto;
+
+        h2 {
+          min-width: 480px;
+        }
+
+        .merit-container {
+          width: auto;
+          padding-right: 20px;
+          padding-left: 20px;
+
+          .number {
+            p {
+              margin-right: 0;
+            }
+
+            h3::before {
+              display: none;
+            }
+
+            h3::after {
+              display: none;
+            }
+          }
+        }
+
+        .merit-contents {
+          flex-direction: column;
+
+          figure {
+            display: none;
+          }
+
+          .respnsive-merit-images {
+            display: block;
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-around;
+
+            .respnsive-merit-image {
+              display: block;
+            }
+          }
+
+          .merit-text {
+            p {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  #nutrition {
+    min-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    
+    header {
+      justify-content: space-between;
+      width: 100%;
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 101;
+        background-color: black;
+        ul {
+          display: flex;
+          flex-direction: column;
+          .logo-btn {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 0;
+          }
+        }
+        li {
+          a {
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 24px;
+          }
+        }
+      }
+      ul {
+        display: none;
+      }
+      
+      li {
+        margin-right: 0;
+        
+        a {
+          display: none;
+        }
+      }
+      
+      button {
+        display: block;
+        background-color: transparent;
+        
+        .my-example {
+          color: #fff;
+        }
+      }
+    }
+    
+    main {
+      padding-right: 30px;
+      padding-left: 30px;
+      
+      h1 {
+        font-size: 24px;
+      }
+      
+      p {
+        width: auto;
+      }
+      
+      .nutrition-list {
+        flex-wrap: wrap;
+        
+        .total-carbohydrate {
+          width: 158px;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .carbohydrate {
+          width: 158px;
+          margin-right: 0;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .dietary-fiber {
+          width: 158px;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .fat {
+          width: 158px;
+          margin-right: 0;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .saturatedfat {
+          width: 158px;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .unsaturated-fatty-acids {
+          width: 158px;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .protein {
+          width: 158px;
+          margin-right: 0;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .animal-protein {
+          width: 158px;
+          margin-right: 0;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .vegetable-protein {
+          width: 158px;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .vitamin {
+          width: 158px;
+          margin-right: 0;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .water-soluble-vitamins {
+          width: 158px;
+          margin-right: 0;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        .fat-soluble-vitamins {
+          width: 158px;
+          
+          figure {
+            display: none;
+          }
+          
+          .responsive-nutrition-image {
+            display: block;
+          }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      }
+      
+    }
+  }
+}
+
+
+/*# sourceMappingURL=responsive.css.map */

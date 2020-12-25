@@ -1,0 +1,707 @@
+/* toppage.html */
+#top {
+  background-color: #151515;
+  min-width: 1000px;
+  margin: 0 auto; }
+
+/* header */
+#top header {
+  display: flex;
+  background: transparent;
+  position: fixed; }
+  #top header button {
+    display: none; }
+  #top header .open {
+    display: block; }
+  #top header .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 101;
+    background-color: black; }
+    #top header .modal ul {
+      display: flex;
+      flex-direction: column; }
+      #top header .modal ul .logo-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0; }
+    #top header .modal li a {
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 24px; }
+
+#top header .logo {
+  margin: 15px 100px 0 20px; }
+
+#top header ul {
+  display: flex;
+  margin-top: 20px; }
+
+#top header ul li {
+  list-style: none;
+  margin-right: 90px; }
+
+#top header ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block; }
+
+/* main */
+/* main-image */
+.main-image {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  height: 100vh;
+  background-image: url(../images/top-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin-bottom: 60px; }
+
+.main-image p {
+  margin-bottom: 100px;
+  position: relative;
+  display: inline-block;
+  width: 50px; }
+
+.main-image p::after {
+  content: '';
+  display: inline-block;
+  border-left: 1px solid #fff;
+  height: 80px;
+  position: absolute;
+  top: 30px;
+  left: 25px; }
+
+/* nutrition-nav" */
+.nutrition-nav {
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 200px; }
+
+.nutrition-nav li {
+  list-style: none;
+  width: 25%;
+  height: 30vw;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.nutrition-nav li a {
+  text-decoration: none;
+  color: #fff; }
+
+.nutrition-nav li:first-child {
+  background-image: url(../images/nav-carbo.jpg); }
+
+.nutrition-nav li:nth-child(2) {
+  background-image: url(../images/nav-fat.jpg); }
+
+.nutrition-nav li:nth-child(3) {
+  background-image: url(../images/nav-protein.jpg); }
+
+.nutrition-nav li:last-child {
+  background-image: url(../images/nav-vitamin.jpg); }
+
+.nutrition-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  display: block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.traning-nav {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 140px; }
+
+.traning-nav h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center; }
+
+.traning-nav ul {
+  display: flex;
+  flex-wrap: wrap; }
+
+.traning-nav ul li {
+  list-style: none;
+  width: 50%;
+  height: 25vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.traning-nav ul li::before {
+  content: '';
+  display: inline-block;
+  border-left: 1px solid #fff;
+  height: 60px;
+  position: absolute;
+  top: -5%;
+  left: 50%; }
+
+.traning-nav ul li::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999999;
+  border-radius: 4px; }
+
+.traning-nav ul li:first-child {
+  background-image: url(../images/nav-chest.jpg);
+  margin-top: 80px; }
+
+.traning-nav ul li:nth-child(2) {
+  background-image: url(../images/nav-back.jpg);
+  margin-top: 40px; }
+
+.traning-nav ul li:nth-child(3) {
+  background-image: url(../images/nav-sholder.jpg);
+  margin-top: 80px; }
+
+.traning-nav ul li:nth-child(4) {
+  background-image: url(../images/nav-arms.jpg);
+  margin-top: 40px; }
+
+.traning-nav ul li:last-child {
+  background-image: url(../images/nav-legs.jpg);
+  margin-top: 80px; }
+
+.traning-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.traning-nav ul li a span {
+  font-size: 12px;
+  margin-top: 25px; }
+
+footer {
+  display: flex;
+  padding: 90px 0 115px 60px;
+  border-top: 1px solid #fff;
+  background-color: #000; }
+
+.footer-traning-nav {
+  width: 25%; }
+
+.footer-traning-nav h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative; }
+
+.footer-traning-nav h2::after {
+  content: '';
+  display: inline-block;
+  border-left: 1px solid #fff;
+  height: 60px;
+  position: absolute;
+  bottom: 48px;
+  left: 20px; }
+
+.footer-traning-nav ul li {
+  list-style: none; }
+
+.footer-traning-nav ul a {
+  color: #999999;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px; }
+
+.footer-nutrition-nav {
+  width: 25%; }
+
+.footer-nutrition-nav h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative; }
+
+.footer-nutrition-nav h2::after {
+  content: '';
+  display: inline-block;
+  border-left: 1px solid #fff;
+  height: 60px;
+  position: absolute;
+  bottom: 48px;
+  left: 20px; }
+
+.footer-nutrition-nav ul li {
+  list-style: none; }
+
+.footer-nutrition-nav ul li a {
+  color: #999999;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px; }
+
+.footer-merit-nav {
+  width: 25%; }
+
+.footer-merit-nav h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative; }
+
+.footer-merit-nav h2::after {
+  content: '';
+  display: inline-block;
+  border-left: 1px solid #fff;
+  height: 60px;
+  position: absolute;
+  bottom: 48px;
+  left: 20px; }
+
+.footer-merit-nav ul li {
+  list-style: none; }
+
+.footer-merit-nav ul li a {
+  color: #999999;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px; }
+
+.sns-nav h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative; }
+
+.sns-nav h2::after {
+  content: '';
+  display: inline-block;
+  border-left: 1px solid #fff;
+  height: 60px;
+  position: absolute;
+  bottom: 48px;
+  left: 20px; }
+
+.sns-nav ul li {
+  list-style: none; }
+
+.sns-nav ul li a {
+  color: #999999;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px; }
+
+header {
+  display: flex;
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  z-index: 100; }
+  header button {
+    display: none; }
+  header .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 101;
+    background-color: black; }
+    header .modal ul {
+      display: flex;
+      flex-direction: column; }
+      header .modal ul .logo-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0; }
+    header .modal li a {
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 24px; }
+
+header .logo {
+  margin: 15px 100px 0 20px; }
+
+header ul {
+  display: flex;
+  margin-top: 20px; }
+
+header ul li {
+  list-style: none;
+  margin-right: 90px; }
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block; }
+
+#traning {
+  min-width: 1000px;
+  margin: 0 auto; }
+
+#traning main {
+  padding-right: 20px;
+  padding-left: 20px; }
+  #traning main h1 {
+    padding-top: 166px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 36px; }
+#traning .parts {
+  min-width: 1000px;
+  margin: 0 auto; }
+  #traning .parts span {
+    font-size: 18px; }
+  #traning .parts .menu-container {
+    width: 80%;
+    margin: 0 auto; }
+  #traning .parts .number {
+    display: flex;
+    position: relative; }
+    #traning .parts .number p {
+      font-size: 36px;
+      margin-top: -240px;
+      margin-right: 330px;
+      z-index: 1; }
+    #traning .parts .number p::before {
+      content: '';
+      display: inline-block;
+      border-top: 1px solid #000;
+      width: 40px;
+      position: absolute;
+      top: -270px;
+      left: 5px;
+      z-index: 1; }
+    #traning .parts .number h3 {
+      font-size: 24px;
+      margin-top: -140px; }
+    #traning .parts .number h3::before {
+      content: '';
+      display: inline-block;
+      border-top: 1px solid #000;
+      width: 40px;
+      position: absolute;
+      top: -270px;
+      left: 380px;
+      z-index: 1; }
+    #traning .parts .number h3::after {
+      content: '';
+      display: inline-block;
+      border-top: 1px solid #000;
+      width: 40px;
+      position: absolute;
+      top: -50px;
+      left: 380px;
+      z-index: 1; }
+  #traning .parts .menu-contents {
+    display: flex;
+    margin-bottom: 70px; }
+    #traning .parts .menu-contents figure {
+      margin-top: 20px; }
+    #traning .parts .menu-contents .respnsive-traning-menu-images {
+      display: none; }
+  #traning .parts .menu-text p {
+    font-size: 14px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    line-height: 3; }
+
+#chest h2 {
+  background-image: url(../images/menu-chest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1000px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  border-bottom: 130px solid #eee;
+  position: relative;
+  margin-bottom: 220px; }
+
+#back h2 {
+  background-image: url(../images/menu-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1000px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  border-bottom: 130px solid #eee;
+  position: relative;
+  margin-bottom: 220px; }
+
+#sholders h2 {
+  background-image: url(../images/menu-sholder.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1000px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  border-bottom: 130px solid #eee;
+  position: relative;
+  margin-bottom: 220px; }
+
+#arms h2 {
+  background-image: url(../images/menu-arms.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1000px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  border-bottom: 130px solid #eee;
+  position: relative;
+  margin-bottom: 220px; }
+
+#legs h2 {
+  background-image: url(../images/menu-legs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1000px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  border-bottom: 130px solid #eee;
+  position: relative;
+  margin-bottom: 220px; }
+
+#nutrition main {
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #151515; }
+
+#nutrition main p {
+  width: 307px;
+  margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff; }
+
+#nutrition main h1 {
+  padding-top: 166px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 36px;
+  color: #fff; }
+
+#nutrition main h2 {
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px; }
+
+#nutrition main h2::before {
+  content: '';
+  display: inline-block;
+  border-top: 1px solid #fff;
+  width: 20px;
+  position: absolute;
+  top: -25px;
+  left: 0; }
+
+#nutrition main .nutrition-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.total-carbohydrate {
+  margin-right: 40px; }
+  .total-carbohydrate .responsive-nutrition-image {
+    display: none; }
+
+.carbohydrate {
+  margin-right: 40px; }
+  .carbohydrate .responsive-nutrition-image {
+    display: none; }
+
+.dietary-fiber .responsive-nutrition-image {
+  display: none; }
+
+.fat {
+  margin-right: 40px; }
+  .fat .responsive-nutrition-image {
+    display: none; }
+
+.saturatedfat {
+  margin-right: 40px; }
+  .saturatedfat .responsive-nutrition-image {
+    display: none; }
+
+.unsaturated-fatty-acids .responsive-nutrition-image {
+  display: none; }
+
+.protein {
+  margin-right: 40px; }
+  .protein .responsive-nutrition-image {
+    display: none; }
+
+.animal-protein {
+  margin-right: 40px; }
+  .animal-protein .responsive-nutrition-image {
+    display: none; }
+
+.vegetable-protein .responsive-nutrition-image {
+  display: none; }
+
+.vitamin {
+  margin-right: 40px; }
+  .vitamin .responsive-nutrition-image {
+    display: none; }
+
+.water-soluble-vitamins {
+  margin-right: 40px; }
+  .water-soluble-vitamins .responsive-nutrition-image {
+    display: none; }
+
+.fat-soluble-vitamins {
+  margin-bottom: 90px; }
+  .fat-soluble-vitamins .responsive-nutrition-image {
+    display: none; }
+
+#merit main {
+  padding-right: 20px;
+  padding-left: 20px; }
+  #merit main h1 {
+    padding-top: 166px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 36px; }
+  #merit main .effect {
+    min-width: 1000px;
+    margin: 0 auto; }
+    #merit main .effect span {
+      font-size: 18px; }
+    #merit main .effect .merit-container {
+      width: 80%;
+      margin: 0 auto; }
+    #merit main .effect .number {
+      display: flex;
+      position: relative; }
+      #merit main .effect .number p {
+        font-size: 36px;
+        margin-top: -240px;
+        margin-right: 330px;
+        z-index: 1; }
+      #merit main .effect .number p::before {
+        content: '';
+        display: inline-block;
+        border-top: 1px solid #000;
+        width: 40px;
+        position: absolute;
+        top: -270px;
+        left: 5px;
+        z-index: 1; }
+      #merit main .effect .number h3 {
+        font-size: 24px;
+        margin-top: -140px; }
+      #merit main .effect .number h3::before {
+        content: '';
+        display: inline-block;
+        border-top: 1px solid #000;
+        width: 40px;
+        position: absolute;
+        top: -270px;
+        left: 380px;
+        z-index: 1; }
+      #merit main .effect .number h3::after {
+        content: '';
+        display: inline-block;
+        border-top: 1px solid #000;
+        width: 40px;
+        position: absolute;
+        top: -50px;
+        left: 380px;
+        z-index: 1; }
+    #merit main .effect .merit-contents {
+      display: flex;
+      margin-bottom: 70px; }
+      #merit main .effect .merit-contents .respnsive-merit-images {
+        display: none; }
+      #merit main .effect .merit-contents figure {
+        margin-top: 20px; }
+    #merit main .effect .merit-text p {
+      font-size: 14px;
+      margin-left: 80px;
+      margin-bottom: 50px;
+      line-height: 3; }
+
+#goal h2 {
+  background-image: url(../images/goal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1000px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  border-bottom: 130px solid #eee;
+  position: relative;
+  margin-bottom: 220px; }
+
+#health h2 {
+  background-image: url(../images/health.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1000px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  border-bottom: 130px solid #eee;
+  position: relative;
+  margin-bottom: 220px; }
+
+/*# sourceMappingURL=style.css.map */
